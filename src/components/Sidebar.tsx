@@ -1,38 +1,37 @@
-import { Logo } from "./icons/Logo";
+import { NavLink } from "./NavLink"
+import { Logo } from "./icons/Logo"
 
 export function Sidebar() {
   return (
-    <aside className="border-r border-white/10 w-80 fixed top-0 left-0 bottom-0 p-6">
-      <Logo className="text-white h-4 w-auto" />
+    <aside className="fixed hidden lg:block bottom-0 left-0 top-0 w-80 border-r border-white/10 p-6">
+      <Logo className="h-4 w-auto text-white" />
 
       <nav className="mt-10 flex flex-col gap-6">
         <div className="flex flex-col gap-4">
-          <strong className="text-zinc-100 font-medium text-sm">
-            Guias
-          </strong>
+          <strong className="text-sm font-medium text-zinc-100">Guias</strong>
 
-          <div className="text-sm flex flex-col pl-2">
-            <a className="px-4 py-2 border-l border-white/5 hover:border-sky-400 text-zinc-400 hover:text-white transition-colors" href="">Introdução</a>
-            <a className="px-4 py-2 border-l border-white/5 hover:border-sky-400 text-zinc-400 hover:text-white transition-colors" href="">Iniciando</a>
-            <a className="px-4 py-2 border-l border-white/5 hover:border-sky-400 text-zinc-400 hover:text-white transition-colors" href="">SDKs</a>
-            <a className="px-4 py-2 border-l border-white/5 hover:border-sky-400 text-zinc-400 hover:text-white transition-colors" href="">Authentication</a>
-            <a className="px-4 py-2 border-l border-white/5 hover:border-sky-400 text-zinc-400 hover:text-white transition-colors" href="">Paginação</a>
-            <a className="px-4 py-2 border-l border-white/5 hover:border-sky-400 text-zinc-400 hover:text-white transition-colors" href="">Erros</a>
-            <a className="px-4 py-2 border-l border-white/5 hover:border-sky-400 text-zinc-400 hover:text-white transition-colors" href="">Webhooks</a>
+          <div className="flex flex-col pl-2 text-sm">
+            <NavLink href="/test/a">Introdução</NavLink>
+            <NavLink href="/test/b">Iniciando</NavLink>
+            <NavLink href="/test/c">SDKs</NavLink>
+            <NavLink href="/test/d">Authentication</NavLink>
+            <NavLink href="/test/e">Paginação</NavLink>
+            <NavLink href="/test/f">Erros</NavLink>
+            <NavLink href="/test/g">Webhooks</NavLink>
           </div>
         </div>
         <div className="flex flex-col gap-4">
-          <strong className="text-zinc-100 font-medium text-sm">
+          <strong className="text-sm font-medium text-zinc-100">
             Recursos
           </strong>
 
-          <div className="text-sm flex flex-col pl-2">
-            <a className="px-4 py-2 border-l border-white/5 hover:border-sky-400 text-zinc-400 hover:text-white transition-colors" href="">Contatos</a>
-            <a className="px-4 py-2 border-l border-white/5 hover:border-sky-400 text-zinc-400 hover:text-white transition-colors" href="">Conversas</a>
-            <a className="px-4 py-2 border-l border-white/5 hover:border-sky-400 text-zinc-400 hover:text-white transition-colors" href="">Mensagens</a>
-            <a className="px-4 py-2 border-l border-white/5 hover:border-sky-400 text-zinc-400 hover:text-white transition-colors" href="">Grupos</a>
-            <a className="px-4 py-2 border-l border-white/5 hover:border-sky-400 text-zinc-400 hover:text-white transition-colors" href="">Paginação</a>
-            <a className="px-4 py-2 border-l border-white/5 hover:border-sky-400 text-zinc-400 hover:text-white transition-colors" href="">Anexos</a>
+          <div className="flex flex-col pl-2 text-sm">
+            <NavLink href="/test/h">Contatos</NavLink>
+            <NavLink href="/test/i">Conversas</NavLink>
+            <NavLink href="/test/j">Mensagens</NavLink>
+            <NavLink href="/test/k">Grupos</NavLink>
+            <NavLink href="/test/l">Paginação</NavLink>
+            <NavLink href="/test/m">Anexos</NavLink>
           </div>
         </div>
       </nav>

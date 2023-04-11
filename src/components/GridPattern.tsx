@@ -1,4 +1,4 @@
-import { SVGProps, useId } from 'react'
+import { SVGProps, useId } from "react"
 
 interface GridPatternProps extends SVGProps<SVGSVGElement> {
   width: number
@@ -6,7 +6,14 @@ interface GridPatternProps extends SVGProps<SVGSVGElement> {
   squares: Array<[number, number]>
 }
 
-export function GridPattern({ width, height, x, y, squares, ...props }: GridPatternProps) {
+export function GridPattern({
+  width,
+  height,
+  x,
+  y,
+  squares,
+  ...props
+}: GridPatternProps) {
   let patternId = useId()
 
   return (
